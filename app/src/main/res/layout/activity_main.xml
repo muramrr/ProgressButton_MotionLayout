@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.motion.widget.MotionLayout
+	android:id="@+id/motionContainer"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".MainActivity"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	app:layoutDescription="@xml/progress_button_scene"
+	app:motionDebug="SHOW_ALL"
+	>
+
+
+	<com.google.android.material.button.MaterialButton
+		android:id="@+id/btnDone"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:backgroundTint="#6200EE"
+		android:layout_marginStart="16dp"
+		android:layout_marginEnd="16dp"
+
+		android:text="Done"
+		android:textColor="@android:color/white"
+
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		/>
+
+	<androidx.cardview.widget.CardView
+		android:id="@+id/cvProgressSpinner"
+		android:layout_width="50dp"
+		android:layout_height="50dp"
+
+		app:cardBackgroundColor="#6200EE"
+		app:cardCornerRadius="50dp"
+
+		android:alpha="0"
+
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		>
+
+		<ProgressBar
+			android:layout_width="24dp"
+			android:layout_height="24dp"
+			android:layout_gravity="center"
+			android:indeterminateOnly="true"
+			android:indeterminateTint="@android:color/white"
+			/>
+
+	</androidx.cardview.widget.CardView>
+
+	<View
+		android:id="@+id/scaleBg"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+
+		android:alpha="0"
+
+		android:background="@color/colorPrimary"
+
+		app:layout_constraintBottom_toBottomOf="@id/cvProgressSpinner"
+		app:layout_constraintLeft_toLeftOf="@id/cvProgressSpinner"
+		app:layout_constraintRight_toRightOf="@id/cvProgressSpinner"
+		app:layout_constraintTop_toTopOf="@id/cvProgressSpinner"
+		/>
+
+	<TextView
+		android:id="@+id/tvHello"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+
+		android:alpha="0"
+		android:text="Hello world!"
+		android:textSize="20sp"
+
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		/>
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

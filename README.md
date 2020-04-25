@@ -38,7 +38,7 @@ authViewModel.authState.observe(this, Observer { authStates ->
 
 Also, *end* state can be mixed up with your app logo or something like ***Hello, Username*** and after that just open your mainFragment/Activity etc.
 
-### Licence
+### License
 
 ```License
 Copyright (c) 2020 Andrii Kovalchuk

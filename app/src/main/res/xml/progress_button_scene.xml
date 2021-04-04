@@ -92,8 +92,8 @@
 
 
 		<Constraint android:id="@+id/cvProgressSpinner"
-			android:layout_width="50dp"
-			android:layout_height="50dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
 
 			android:alpha="0"
 
@@ -123,8 +123,8 @@
 			/>
 
 		<Constraint android:id="@+id/cvProgressSpinner"
-			android:layout_width="50dp"
-			android:layout_height="50dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
 
 			android:alpha="1"
 
